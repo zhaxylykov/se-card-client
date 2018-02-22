@@ -1,0 +1,236 @@
+body {
+	background: url(images/back.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+#bd {
+
+}
+
+/* menu construction */
+
+#menu {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #000000;
+	text-align: center;
+	box-shadow: 0 0 10px 5px;
+	z-index: 2;
+}
+
+#logo {
+	position: absolute;
+	height: 50px;
+	width: 200px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+#dropdown {
+	display: none;
+	position: absolute;
+	height: 140px;
+	width: 150px;
+	margin-top: 13px;
+	background-color: #000000;
+	z-index: 1;
+}
+
+.drop_but {
+	height: 30px;
+	width: 150px;
+	display: inline-block;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-left: 10px;
+	text-align: left;
+	border-color: #000000;
+	border-style: ridge;
+	border-width: 0 0 0 3px;
+}
+
+.menu_but {
+	height: 30px;
+	width: 150px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+#other a {
+	color: #FFFFFF;
+}
+
+#account, #language {
+	position: absolute;
+	top:0px;
+	height: 50px;
+	width: 50px;
+	font-size: 0;
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+
+#account {
+	right: 50px;
+}
+
+#language {
+	right: 0px;
+}
+
+.features_img {
+	height: 44px;
+	width: 44px;
+	display: inline-block;
+	border: 3px solid;
+}
+
+.features_container {
+	position: absolute;
+	top: 50px;
+	right: -250px;
+	width: 200px;
+	padding-bottom: 10px;
+	background-color: grey;
+	font-size: 13px;
+	color: white;
+	transition: right 0.5s ease-out 0.2s;
+}
+
+/* menu functionality */
+
+.menu_but:hover {
+	border-color: blue;
+	border-style: ridge;
+	border-width: 0 0 3px 0;
+}
+
+.menu_but:hover a {
+	color: blue;
+}
+
+#other:hover #dropdown {
+	display: block;
+}
+
+.drop_but:hover {
+	border-color: blue;
+}
+
+#dropdown .drop_but:hover a {
+	color: blue;
+}
+
+#account:hover {
+	background-color: blue;
+}
+
+#language:hover {
+	background-color: blue;
+}
+
+#account:hover .features_container {
+	right: -50px;
+}
+
+#language:hover .features_container {
+	right: 0px;
+}
+
+.features_container .drop_but:hover a {
+	color: blue;
+}
+
+/* play button */
+
+#play {
+	position: relative;
+	height: 200px;
+	width: 400px;
+	margin: auto;
+	margin-top: 60px;
+	z-index: 1;
+}
+
+#play_img {
+	position: relative;
+	left: 0px;
+	transition: all 0.5s ease-out;
+}
+
+#play_img:hover {
+	position: relative;
+	left: -20px;
+	height: 220px;
+	width: 440px;
+}
+
+/* carousel construction */
+
+
+#carousel {
+	position: relative;
+	height: 400px;
+	width: 1000px;
+	margin: auto;
+	margin-top: -50px;
+	box-shadow: 0 0 20px 10px;
+	border-style: ridge;
+	border-color: #ff9000;
+	border-width: 2px;
+	overflow: hidden;
+}
+
+#main_img0 {
+	position:absolute;
+	height: 400px;
+	width: 1000px;
+	top: 0px;
+	left: 0px;
+}
+
+#main_img1 {
+	position:absolute;
+	height: 400px;
+	width: 1000px;
+	top: 0px;
+	left: 1000px;
+}
+
+#prev_img, #next_img {
+	position: absolute;
+	top: 195px;
+	height: 60px;
+	width: 60px;
+	opacity: 0.3;
+}
+
+#prev_img {
+	left: 20px;
+}
+
+#next_img {
+	right: 20px;
+}
+
+/* carousel functionality */
+
+#prev_img:hover, #next_img:hover {
+	opacity: 0.9;
+}
